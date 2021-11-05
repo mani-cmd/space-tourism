@@ -1,0 +1,9 @@
+.example {
+    display: inline-block;
+    color: hsl(var(--clr-ascent));
+    padding-inline-end: 0.8rem;
+}
+
+.dim {
+    color: hsl(var(--clr-white) / 0.2);
+}

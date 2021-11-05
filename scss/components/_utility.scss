@@ -1,0 +1,70 @@
+/* ------------------- */
+/*       Utility       */
+/* ------------------- */
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2rem;
+    max-width: 80rem;
+    margin-inline: auto;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap; /* added line */
+    border: 0;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: var(--flow-space, 1rem);
+}
+/* color */
+
+.bg-dark {
+    background-color: hsl(var(--clr-dark));
+}
+
+.bg-ascent {
+    background-color: hsl(var(--clr-ascent));
+}
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.txt-dark {
+    color: hsl(var(--clr-dark));
+}
+
+.txt-ascent {
+    color: hsl(var(--clr-ascent));
+}
+.txt-white {
+    color: hsl(var(--clr-white));
+}
+
+// Number title
+
+.numbered-title {
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    span {
+        font-weight: bold;
+        opacity: 0.25;
+        margin-right: 0.5em;
+    }
+}
